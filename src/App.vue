@@ -1,20 +1,17 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Home from "@/components/Home.vue";
 </script>
 
 <template>
-
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/wcf-icon.svg" class="logo" alt="Vite logo" />
-    </a>
+    <img src="/wcf-logo-full.svg" class="logo" alt="Windy City Furs" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Home />
 </template>
 
 <style scoped>
 .logo {
-  height: 6em;
+  height: 25rem;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
