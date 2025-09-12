@@ -15,6 +15,8 @@ import Home from "@/components/Home.vue";
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

@@ -1,23 +1,36 @@
 <script setup lang="ts">
-import Button from "@/volt/Button.vue";
+import Accordion from "@/volt/Accordion.vue";
+import AccordionPanel from "@/volt/AccordionPanel.vue";
+import AccordionHeader from "@/volt/AccordionHeader.vue";
+import AccordionContent from "@/volt/AccordionContent.vue";
+import BlueSkyLink from "@/components/BlueSkyLink.vue";
+import TelegramAnnouncementsLink from "@/components/TelegramAnnouncementsLink.vue";
 </script>
 
 <template>
-  <a href="https://bsky.app/profile/windycityfurs.com">
-    <Button
-      rounded
-      raised
-      icon=""
-      label="BlueSky"
-      size="large"
-      class="bg-sky-100 hover:bg-sky-200"
-      ><img
-        src="../assets/bsky-logo.png"
-        alt="bsky logo"
-        class="h-8"
-      />BlueSky</Button
-    >
-  </a>
+  <div class="card">
+    <BlueSkyLink />
+    <TelegramAnnouncementsLink />
+  </div>
+  <div class="card">
+    <Accordion value="0" class="max-w-full">
+      <AccordionPanel value="0">
+        <AccordionHeader>Our Group</AccordionHeader>
+        <AccordionContent>
+          <p>
+            Windy City Furs is a 21+ furry meetup group based in the great city
+            of Chicago! We host meetups at arcades, bars, breweries, and more!
+          </p>
+        </AccordionContent>
+      </AccordionPanel>
+      <AccordionPanel value="1">
+        <AccordionHeader>Code of Conduct</AccordionHeader>
+        <AccordionContent>
+          <p></p>
+        </AccordionContent>
+      </AccordionPanel>
+    </Accordion>
+  </div>
 </template>
 
 <style scoped></style>
