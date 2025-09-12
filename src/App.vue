@@ -1,10 +1,12 @@
 <script setup lang="ts">
-import { RouterView } from "vue-router";
-import Nav from "./components/Nav.vue";
+import { RouterView } from 'vue-router'
+import Nav from './components/Nav.vue'
 </script>
 <template>
   <div>
-    <img src="/wcf-logo-full.svg" class="logo" alt="Windy City Furs" />
+    <RouterLink to="/"
+      ><img src="/wcf-logo-full.svg" class="logo" alt="Windy City Furs"
+    /></RouterLink>
   </div>
   <RouterView />
   <Nav />

@@ -25,16 +25,23 @@
     --p-surface-900: #18181b;
     --p-surface-950: #09090b;
     --p-content-border-radius: 6px;
+    --p-wcf-red: #ed3140;
+    --p-wcf-dark-blue: #0e5d97;
+    --p-wcf-light-blue: #27c1f1;
+    --p-wcf-grey: #f4f5f5;
+    --p-wcf-yellow: #b0d235;
+    --p-wcf-white: #ffffff;
+    --p-wcf-black: #0a1622;
 }
 
 /* Light */
 :root {
-    --p-primary-color: var(--p-primary-500);
+    --p-primary-color: var(--p-wcf-light-blue);
     --p-primary-contrast-color: var(--p-surface-0);
     --p-primary-hover-color: var(--p-primary-600);
     --p-primary-active-color: var(--p-primary-700);
     --p-content-border-color: var(--p-surface-200);
-    /*--p-content-hover-background: var(--p-surface-100);*/
+    --p-content-hover-background: var(--p-surface-100);
     --p-content-hover-color: var(--p-surface-800);
     --p-highlight-background: var(--p-primary-50);
     --p-highlight-color: var(--p-primary-700);
@@ -56,7 +63,7 @@
 */
 @media (prefers-color-scheme: dark) {
     :root {
-        --p-primary-color: var(--p-primary-400);
+        --p-primary-color: var(--p-wcf-dark-blue);
         --p-primary-contrast-color: var(--p-surface-900);
         --p-primary-hover-color: var(--p-primary-300);
         --p-primary-active-color: var(--p-primary-200);
