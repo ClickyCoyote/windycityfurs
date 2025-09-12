@@ -61,7 +61,7 @@
 
 /* Light */
 :root {
-  --p-primary-color: var(--p-primary-300);
+  --p-primary-color: var(--p-primary-200);
   --p-primary-contrast-color: var(--wcf-dark-blue);
   --p-primary-hover-color: var(--wcf-light-blue);
   --p-primary-active-color: var(--wcf-dark-blue);
