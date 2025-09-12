@@ -12,7 +12,7 @@ defineProps<{ url: string; label: string }>()
       icon=""
       label="BlueSky"
       size="medium"
-      class="text-sky-900 bg-sky-100 dark:text-sky-100 dark:bg-sky-900 hover:bg-sky-200 border-sky-900 m-1"
+      class="bg-primary text-primary border-primary-emphasis-alt m-1"
     >
       <slot name="icon"></slot>
       {{ label }}</Button
