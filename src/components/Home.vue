@@ -25,24 +25,40 @@ import TelegramAnnouncementsLink from "../components/TelegramAnnouncementsLink.v
       </AccordionPanel>
       <AccordionPanel value="1">
         <AccordionHeader>Code of Conduct</AccordionHeader>
-        <AccordionContent>
-          <p>
-            Windy City Furs does not tolerate hate of any kind, including
-            racism, sexism, homophobia, transphobia, ableism, etc.
-          </p>
-          <p>
-            Harassment of any kind to members will result in a removal from the
-            group.
-          </p>
-          <p>
-            Weapons of any kind, including guns, knives, etc. are strictly
-            prohibited from all meetups.
-          </p>
-          <p>This is a work in progress, more to come</p>
+        <AccordionContent class="">
+          <ul>
+            <li>
+              Windy City Furs does not tolerate hate of any kind, including
+              racism, sexism, homophobia, transphobia, ableism, etc.
+            </li>
+            <li>
+              Harassment of any kind to members will result in a removal from
+              the group.
+            </li>
+            <li>
+              Weapons of any kind, including guns, knives, etc. are strictly
+              prohibited from all meetups.
+            </li>
+            <li>This is a work in progress, more to come</li>
+          </ul>
         </AccordionContent>
       </AccordionPanel>
     </Accordion>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+p,
+ul,
+ol {
+  text-align: left;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+</style>
