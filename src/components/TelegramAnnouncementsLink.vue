@@ -3,7 +3,7 @@ import Button from "../volt/Button.vue";
 </script>
 
 <template>
-  <a href="https://t.me/windycityfurs">
+  <a href="https://t.me/WindyCityFurs">
     <Button
       rounded
       raised
