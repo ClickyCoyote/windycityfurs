@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ExternalLinkButton from '@components/ExternalLinkButton.vue'
+import ExternalLinkButton from './ExternalLinkButton.vue'
 </script>
 
 <template>
