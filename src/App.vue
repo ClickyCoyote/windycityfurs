@@ -19,9 +19,6 @@ import Home from "./components/Home.vue";
   margin-right: auto;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 2em #0069a0aa);
 }
 </style>

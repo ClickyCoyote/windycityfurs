@@ -10,7 +10,7 @@ import Button from "../volt/Button.vue";
       icon=""
       label="Telegram Announcements Channel"
       size="medium"
-      class="bg-sky-100 hover:bg-sky-200 mx-2"
+      class="bg-sky-100 hover:bg-sky-200 m-1"
       ><img
         src="../assets/telegram-logo.png"
         alt="telegram logo"
