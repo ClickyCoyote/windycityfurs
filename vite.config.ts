@@ -7,6 +7,10 @@ import * as path from "node:path";
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   resolve: {
-    alias: [{ find: "@", replacement: path.resolve(__dirname, "./src") }],
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+      "@components": path.resolve(__dirname, "./src/components"),
+      "@volt": path.resolve(__dirname, "./src/volt"),
+    },
   },
 });

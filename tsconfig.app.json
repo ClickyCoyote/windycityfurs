@@ -11,5 +11,20 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
+  "paths": {
+    "baseUrl": "./src",
+    "@components/*": [
+      "components/*"
+    ],
+    "@volt/*": [
+      "volt/*"
+    ]
+  },
+  "types": [
+    "node"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
+  ],
   "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
