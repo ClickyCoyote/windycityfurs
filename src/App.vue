@@ -11,7 +11,7 @@ import Home from "./components/Home.vue";
 
 <style scoped>
 .logo {
-  height: 25rem;
+  width: 40rem;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
