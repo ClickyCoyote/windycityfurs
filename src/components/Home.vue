@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Accordion from "../volt/Accordion.vue";
-import AccordionPanel from "../volt/AccordionPanel.vue";
-import AccordionHeader from "../volt/AccordionHeader.vue";
-import AccordionContent from "../volt/AccordionContent.vue";
-import BlueSkyLink from "../components/BlueSkyLink.vue";
-import TelegramAnnouncementsLink from "../components/TelegramAnnouncementsLink.vue";
+import Accordion from '../volt/Accordion.vue'
+import AccordionPanel from '../volt/AccordionPanel.vue'
+import AccordionHeader from '../volt/AccordionHeader.vue'
+import AccordionContent from '../volt/AccordionContent.vue'
+import BlueSkyLink from '../components/BlueSkyLink.vue'
+import TelegramAnnouncementsLink from '../components/TelegramAnnouncementsLink.vue'
 </script>
 
 <template>
@@ -15,7 +15,7 @@ import TelegramAnnouncementsLink from "../components/TelegramAnnouncementsLink.v
   <div class="card">
     <Accordion value="0" class="max-w-full">
       <AccordionPanel value="0">
-        <AccordionHeader>Our Group</AccordionHeader>
+        <AccordionHeader><h2>Our Group</h2></AccordionHeader>
         <AccordionContent>
           <p>
             Windy City Furs is a 21+ furry meetup group based in the great city
@@ -24,7 +24,7 @@ import TelegramAnnouncementsLink from "../components/TelegramAnnouncementsLink.v
         </AccordionContent>
       </AccordionPanel>
       <AccordionPanel value="1">
-        <AccordionHeader>Code of Conduct</AccordionHeader>
+        <AccordionHeader><h2>Code of Conduct</h2></AccordionHeader>
         <AccordionContent class="">
           <ul>
             <li>

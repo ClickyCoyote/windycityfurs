@@ -9,7 +9,8 @@
 :root {
   font-family: "Big Shoulders", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: large;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -32,6 +33,13 @@ body {
 
 h1 {
   font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+h2 {
+  font-size: xx-large;
+  font-weight: bolder;
   line-height: 1.1;
 }
 
