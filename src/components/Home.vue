@@ -39,6 +39,7 @@ import TelegramAnnouncementsLink from '../components/TelegramAnnouncementsLink.v
               Weapons of any kind, including guns, knives, etc. are strictly
               prohibited from all meetups.
             </li>
+            <li>Members must be at least 21 years of age.</li>
             <li>This is a work in progress, more to come</li>
           </ul>
         </AccordionContent>
