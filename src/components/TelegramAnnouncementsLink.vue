@@ -8,7 +8,7 @@ import ExternalLinkButton from './ExternalLinkButton.vue'
     label="Announcements Channel"
   >
     <template #icon>
-      <img src="../assets/telegram-logo.png" alt="telegram logo" class="h-8" />
+      <i class="pi pi-telegram h-8 font-medium" style="font-size: 2rem"></i>
     </template>
   </ExternalLinkButton>
 </template>

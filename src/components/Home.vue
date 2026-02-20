@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import Accordion from '../volt/Accordion.vue'
-import AccordionPanel from '../volt/AccordionPanel.vue'
-import AccordionHeader from '../volt/AccordionHeader.vue'
-import AccordionContent from '../volt/AccordionContent.vue'
+import Accordion from 'primevue/accordion'
+import AccordionPanel from 'primevue/accordionpanel'
+import AccordionHeader from 'primevue/accordionheader'
+import AccordionContent from 'primevue/accordioncontent'
 import BlueSkyLink from '../components/BlueSkyLink.vue'
 import TelegramAnnouncementsLink from '../components/TelegramAnnouncementsLink.vue'
 </script>
