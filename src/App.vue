@@ -26,7 +26,11 @@ const items = ref([
 ])
 </script>
 <template>
-  <Menubar :model="items" class="justify-content-end" pt:start:class="mr-auto">
+  <Menubar
+    :model="items"
+    class="justify-content-end border-0"
+    pt:start:class="mr-auto"
+  >
     <template #start>
       <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
     </template>
@@ -58,4 +62,8 @@ const items = ref([
   <Nav />
 </template>
 
-<style scoped></style>
+<style>
+#app {
+  padding: 0;
+}
+</style>
