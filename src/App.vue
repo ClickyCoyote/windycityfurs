@@ -1,27 +1,61 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import Nav from './components/Nav.vue'
+import Menubar from 'primevue/menubar'
+import { ref } from 'vue'
+
+const items = ref([
+  {
+    label: 'Home',
+    route: '/',
+    // icon: 'pi pi-home',
+  },
+  {
+    label: 'Code of Conduct',
+    route: '/code-of-conduct',
+  },
+  {
+    label: 'Events',
+    route: '/events',
+  },
+  {
+    label: 'Announcements',
+    url: 'https://t.me/WindyCityFurs',
+    icon: 'pi pi-telegram',
+  },
+])
 </script>
 <template>
-  <div>
-    <RouterLink to="/"
-      ><img src="/wcf-logo-full.svg" class="logo" alt="Windy City Furs"
-    /></RouterLink>
-  </div>
+  <Menubar :model="items" class="justify-content-end" pt:start:class="mr-auto">
+    <template #start>
+      <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
+    </template>
+    <template #item="{ item, props }">
+      <RouterLink
+        v-if="item.route"
+        v-slot="{ href, navigate }"
+        :to="item.route"
+        custom
+      >
+        <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+          <span :class="item.icon" />
+          <span>{{ item.label }}</span>
+        </a>
+      </RouterLink>
+      <a
+        v-else
+        v-ripple
+        :href="item.url"
+        :target="item.target"
+        v-bind="props.action"
+      >
+        <span :class="item.icon" />
+        <span>{{ item.label }}</span>
+      </a>
+    </template>
+  </Menubar>
   <RouterView />
   <Nav />
 </template>
 
-<style scoped>
-.logo {
-  width: 40rem;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-  margin-left: auto;
-  margin-right: auto;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #0069a0aa);
-}
-</style>
+<style scoped></style>

@@ -6,6 +6,9 @@ import Button from 'primevue/button'
   <nav>
     <Button size="small" text><RouterLink to="/">Home</RouterLink></Button>
     <Button size="small" text
+      ><RouterLink to="/code-of-conduct">Code of Conduct</RouterLink></Button
+    >
+    <Button size="small" text
       ><RouterLink to="/events">Events</RouterLink></Button
     >
   </nav>

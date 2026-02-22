@@ -6,24 +6,15 @@ import CodeOfConduct from '../components/CodeOfConduct.vue'
 
 <template>
   <div class="card mb-4">
+    <img
+      src="/wcf-logo-full.svg"
+      class="logo w-9/12 m-auto"
+      alt="Windy City Furs"
+    />
     <BlueSkyLink />
     <TelegramAnnouncementsLink />
   </div>
   <CodeOfConduct />
 </template>
 
-<style scoped>
-p,
-ul,
-ol {
-  text-align: left;
-}
-
-ol {
-  list-style: decimal;
-}
-
-ul {
-  list-style: disc;
-}
-</style>
+<style scoped></style>

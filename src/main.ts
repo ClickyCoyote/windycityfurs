@@ -7,9 +7,11 @@ import Calendar from './components/Calendar.vue'
 import { createMemoryHistory, createRouter } from 'vue-router'
 import Aura from '@primeuix/themes/aura'
 import { definePreset } from '@primeuix/themes'
+import CodeOfConduct from './components/CodeOfConduct.vue'
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/code-of-conduct', component: CodeOfConduct },
   { path: '/events', component: Calendar },
 ]
 
