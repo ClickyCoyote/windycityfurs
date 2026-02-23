@@ -8,9 +8,6 @@ import { Card } from 'primevue'
 
 <template>
   <Card class="text-left">
-    <template #header
-      ><h1 class="p-4 text-center">Code of Conduct</h1></template
-    >
     <template #content>
       <Accordion :value="['0', '1', '2']" multiple class="max-w-full">
         <AccordionPanel value="0">
