@@ -34,12 +34,14 @@ import { Card } from 'primevue'
               </li>
               <li>
                 Weapons of any kind, including guns, knives, etc. are strictly
-                prohibited from all meetups.
+                prohibited from all meetups. This includes prop weapons as well.
+                If you have to ask if it's a prop weapon it's likely not
+                allowed.
               </li>
               <li>Members must be at least 21 years of age.</li>
               <li>
                 Our meetups are often at locations where alcohol is served, we
-                kindly as that you do not over-indulge or you may be asked to
+                kindly ask that you do not over-indulge or you may be asked to
                 leave. Bringing outside alcohol is strictly prohibited.
               </li>
               <li>This is a work in progress, more to come</li>
