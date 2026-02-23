@@ -29,11 +29,7 @@ const items = ref([
 </script>
 
 <template>
-  <Menubar
-    :model="items"
-    class="justify-content-end fixed w-full"
-    pt:start:class="mr-auto"
-  >
+  <Menubar :model="items" class="justify-content-end" pt:start:class="mr-auto">
     <template #start>
       <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
     </template>

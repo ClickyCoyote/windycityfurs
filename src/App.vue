@@ -4,7 +4,9 @@ import NavFooter from './components/NavFooter.vue'
 import NavHeader from './components/NavHeader.vue'
 </script>
 <template>
-  <NavHeader />
+  <nav class="fixed w-full">
+    <NavHeader />
+  </nav>
   <div class="mt-14">
     <RouterView />
   </div>
