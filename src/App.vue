@@ -4,7 +4,7 @@ import NavFooter from './components/NavFooter.vue'
 import NavHeader from './components/NavHeader.vue'
 </script>
 <template>
-  <nav class="fixed w-full">
+  <nav class="fixed w-full z-50">
     <NavHeader />
   </nav>
   <div class="mt-14">

@@ -29,9 +29,15 @@ const items = ref([
 </script>
 
 <template>
-  <Menubar :model="items" class="justify-content-end" pt:start:class="mr-auto">
+  <Menubar
+    :model="items"
+    class="justify-content-end min-h-14"
+    pt:start:class="mr-auto"
+  >
     <template #start>
-      <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
+      <RouterLink to="/">
+        <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
+      </RouterLink>
     </template>
     <template #item="{ item, props }">
       <RouterLink
