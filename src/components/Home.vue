@@ -12,7 +12,7 @@ import CodeOfConduct from '../components/CodeOfConduct.vue'
         class="logo w-9/12 m-auto"
         alt="Windy City Furs"
       />
-      <div class="m-4">
+      <div class="mt-4">
         <BlueSkyLink />
         <TelegramAnnouncementsLink />
       </div>
