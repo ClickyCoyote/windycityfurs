@@ -8,11 +8,13 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 import Aura from '@primeuix/themes/aura'
 import { definePreset } from '@primeuix/themes'
 import CodeOfConduct from './components/CodeOfConduct.vue'
+import Staff from './components/Staff.vue'
 
 const routes = [
   { path: '/', component: Home },
   { path: '/code-of-conduct', component: CodeOfConduct },
   { path: '/events', component: Calendar },
+  { path: '/staff', component: Staff },
 ]
 
 const router = createRouter({

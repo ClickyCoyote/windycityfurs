@@ -11,6 +11,9 @@ import Button from 'primevue/button'
     <Button size="small" text
       ><RouterLink to="/events">Events</RouterLink></Button
     >
+    <Button size="small" text
+      ><RouterLink to="/staff">Staff</RouterLink></Button
+    >
   </nav>
 </template>
 
