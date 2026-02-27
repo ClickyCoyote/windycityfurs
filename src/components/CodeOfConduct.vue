@@ -57,6 +57,7 @@ import { Card } from 'primevue'
                 Self-promotion is explicitly prohibited without prior-consent of
                 the admin team.
               </li>
+              <li>Absolutely no generative AI content shall be posted.</li>
             </ul>
           </AccordionContent>
         </AccordionPanel>
