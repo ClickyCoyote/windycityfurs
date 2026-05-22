@@ -1,24 +1,33 @@
 import js from '@eslint/js'
 import globals from 'globals'
-import tseslint from 'typescript-eslint'
+import typescriptEslint from 'typescript-eslint'
 import pluginVue from 'eslint-plugin-vue'
 import markdown from '@eslint/markdown'
 import css from '@eslint/css'
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
+import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default defineConfig([
+  globalIgnores(['**/dist/*', '**/node_modules/*']),
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,vue}'],
     plugins: { js },
     extends: ['js/recommended'],
     languageOptions: { globals: globals.browser },
   },
-  tseslint.configs.recommended,
-  pluginVue.configs['flat/essential'],
+  typescriptEslint.configs.recommended,
+  pluginVue.configs['flat/strongly-recommended'],
   {
     files: ['**/*.vue'],
-    languageOptions: { parserOptions: { parser: tseslint.parser } },
-    rules: {},
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: globals.browser,
+      parserOptions: { parser: typescriptEslint.parser },
+    },
+    rules: {
+      'multi-word-component-names': 'off',
+    },
   },
   {
     files: ['**/*.md'],
@@ -32,4 +41,5 @@ export default defineConfig([
     language: 'css/css',
     extends: ['css/recommended'],
   },
+  eslintConfigPrettier,
 ])
