@@ -4,7 +4,7 @@ import ExternalLinkButton from './ExternalLinkButton.vue'
 
 <template>
   <ExternalLinkButton
-    url="https://bsky.app/profile/windycityfurs.com"
+    url="https://bsky.app/profile/windycityfurs.org"
     label="BlueSky"
   >
     <template #icon>
