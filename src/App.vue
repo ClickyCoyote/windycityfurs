@@ -7,7 +7,7 @@ import NavHeader from './components/NavHeader.vue'
   <nav class="fixed w-full z-50">
     <NavHeader />
   </nav>
-  <div class="mt-14">
+  <div class="mt-14 min-xl:mx-48">
     <RouterView />
   </div>
   <NavFooter />
@@ -16,10 +16,5 @@ import NavHeader from './components/NavHeader.vue'
 <style>
 #app {
   padding: 0;
-}
-
-.p-menubar {
-  border: 0 !important;
-  border-radius: 0 !important;
 }
 </style>
