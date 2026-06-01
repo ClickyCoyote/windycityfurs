@@ -25,6 +25,16 @@ const items = ref([
     url: 'https://t.me/WindyCityFurs',
     icon: 'pi pi-telegram',
   },
+  {
+    label: 'FurTrack',
+    url: 'https://www.furtrack.com/index/event:windy_city_furs',
+    icon: 'pi pi-camera',
+  },
+  {
+    label: 'BlueSky',
+    url: 'https://bsky.app/profile/windycityfurs.org',
+    icon: 'pi pi-at',
+  },
 ])
 </script>
 
