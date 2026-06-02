@@ -13,7 +13,11 @@
   "dependencies": {
     "@primeuix/themes": "^2.0.3",
     "@tailwindcss/vite": "^4.1.13",
+    "axios": "^1.16.1",
+    "axios-oauth-client": "^2.2.0",
+    "date-fns": "^4.4.0",
     "eslint-config-prettier": "^10.1.8",
+    "googleapis": "^173.0.0",
     "primeicons": "^7.0.0",
     "primevue": "^4.5.4",
     "tailwind-merge": "^3.3.1",

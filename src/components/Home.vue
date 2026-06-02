@@ -2,7 +2,9 @@
 import BlueSkyLink from '../components/BlueSkyLink.vue'
 import TelegramAnnouncementsLink from '../components/TelegramAnnouncementsLink.vue'
 import CodeOfConduct from '../components/CodeOfConduct.vue'
-import { Message } from 'primevue'
+import NextEventBanner from '../components/NextEventBanner.vue'
+
+const nextEventDate = new Date('2026-06-21T15:00:00.000')
 </script>
 
 <template>
@@ -18,10 +20,7 @@ import { Message } from 'primevue'
         <TelegramAnnouncementsLink />
       </div>
     </div>
-    <Message severity="info" size="large" class="mb-8">
-      <template #icon><i class="pi pi-exclamation-circle" /></template>
-      Our next meetup is at Logan Arcade on Sunday, June 21st at 3:00pm
-    </Message>
+    <NextEventBanner :date-time="nextEventDate" location="Logan Arcade" />
     <CodeOfConduct />
   </div>
 </template>
