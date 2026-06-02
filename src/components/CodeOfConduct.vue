@@ -7,6 +7,7 @@ import { Card } from 'primevue'
 </script>
 
 <template>
+  <h1>Code of Conduct</h1>
   <Card class="text-left">
     <template #content>
       <Accordion :value="['0', '1', '2']" multiple class="max-w-full">

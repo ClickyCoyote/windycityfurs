@@ -7,7 +7,7 @@ import NavHeader from './components/NavHeader.vue'
   <nav class="fixed w-full z-50">
     <NavHeader />
   </nav>
-  <div class="mt-14 min-xl:mx-48">
+  <div class="mt-14 p-4 max-w-7xl mx-auto">
     <RouterView />
   </div>
   <NavFooter />
