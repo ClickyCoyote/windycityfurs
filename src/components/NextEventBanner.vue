@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { Message } from 'primevue'
 // import { getNextEvent } from '../calendar.ts'
-// import { format } from 'date-fns/format'
+import { format } from 'date-fns/format'
+// import { onMounted, ref } from 'vue'
+// import { getNextEvent } from '@/calendar.ts'
 // import { onMounted, ref } from 'vue'
 
-const dateTime = new Date('2026-06-21T15:00:00.000')
+const dateTime = format(
+  new Date('2026-06-21T15:00:00.000'),
+  "eeee, MMMM do 'at' h:mmaaa",
+)
 const location = 'Logan Arcade'
 
 // const dateTime = ref()
@@ -14,7 +19,7 @@ const location = 'Logan Arcade'
 //   const nextEvent = await getNextEvent()
 //   dateTime.value = format(
 //     new Date(nextEvent.formattedDate),
-//     "eeee, MMMM do 'at' h:mmaaa",
+//     "eeee, MMMM do 'at' h:mmaaa"
 //   )
 //   location.value = nextEvent.location
 // })
