@@ -3,7 +3,7 @@ import { convertIcsCalendar } from 'ts-ics'
 import { getTime } from 'date-fns/getTime'
 
 const CALENDAR_URI =
-  'https://calendar.google.com/calendar/ical/windycityfurs%40gmail.com/public/basic.ics'
+  '/google-calendar/calendar/ical/windycityfurs%40gmail.com/public/basic.ics'
 
 export const getLatestEvents = async () => {
   const response = await fetch(CALENDAR_URI)
