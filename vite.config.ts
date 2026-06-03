@@ -13,6 +13,9 @@ export default defineConfig({
     },
   },
   server: {
+    cors: {
+      origin: 'https://windycityfurs.org',
+    },
     proxy: {
       '/google-calendar': {
         target: 'https://calendar.google.com',
