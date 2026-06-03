@@ -56,18 +56,12 @@ const items = ref([
         :to="item.route"
         custom
       >
-        <a v-ripple :href="href" v-bind="props.action" @click="navigate">
+        <a :href="href" v-bind="props.action" @click="navigate">
           <span :class="item.icon" />
           <span>{{ item.label }}</span>
         </a>
       </RouterLink>
-      <a
-        v-else
-        v-ripple
-        :href="item.url"
-        :target="item.target"
-        v-bind="props.action"
-      >
+      <a v-else :href="item.url" :target="item.target" v-bind="props.action">
         <span :class="item.icon" />
         <span>{{ item.label }}</span>
       </a>

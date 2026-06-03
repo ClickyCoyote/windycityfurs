@@ -12,4 +12,20 @@ export default defineConfig({
       '@components': path.resolve(__dirname, './src/components'),
     },
   },
+  server: {
+    proxy: {
+      '/google-calendar': {
+        target: 'https://calendar.google.com',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/google-calendar/, ''),
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => {
+            // Remove headers that might conflict
+            proxyReq.removeHeader('origin')
+            proxyReq.removeHeader('referer')
+          })
+        },
+      },
+    },
+  },
 })

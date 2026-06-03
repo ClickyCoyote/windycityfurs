@@ -3,8 +3,6 @@ import BlueSkyLink from '../components/BlueSkyLink.vue'
 import TelegramAnnouncementsLink from '../components/TelegramAnnouncementsLink.vue'
 import CodeOfConduct from '../components/CodeOfConduct.vue'
 import NextEventBanner from '../components/NextEventBanner.vue'
-
-const nextEventDate = new Date('2026-06-21T15:00:00.000')
 </script>
 
 <template>
@@ -20,7 +18,7 @@ const nextEventDate = new Date('2026-06-21T15:00:00.000')
         <TelegramAnnouncementsLink />
       </div>
     </div>
-    <NextEventBanner :date-time="nextEventDate" location="Logan Arcade" />
+    <NextEventBanner />
     <CodeOfConduct />
   </div>
 </template>
