@@ -6,10 +6,11 @@
   ],
   "compilerOptions": {
     "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "paths": {
-      "@components/*": [
-        "components/*"
-      ],
-    },
+      "@components/*": ["components/*"]
+    }
   },
+  "exclude": ["node_modules", "./dist/**/*", "./server/**/*"]
 }

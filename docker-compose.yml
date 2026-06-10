@@ -1,0 +1,42 @@
+name: Windy City Furs
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: runner
+      no_cache: true
+      args:
+        - VITE_API_BASE_URI=http://localhost:3000/api
+        - VITE_NEXT_EVENT_URI=/events/next
+    container_name: frontend
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    networks:
+      - network
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+      no_cache: true
+    container_name: backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - CALENDAR_URI=https://calendar.google.com/calendar/ical/windycityfurs%40gmail.com/public/basic.ics
+    networks:
+      - network
+networks:
+  network:

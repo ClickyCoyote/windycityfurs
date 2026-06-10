@@ -4,6 +4,8 @@ import { format } from 'date-fns/format'
 import { onMounted, ref } from 'vue'
 import type { CalendarEvent } from '../types.ts'
 
+const NEXT_EVENT_URI = `${import.meta.env.VITE_API_BASE_URI}${import.meta.env.VITE_NEXT_EVENT_URI}`
+
 const hardcoded = {
   formattedDate: '2026-06-21T15:00:00.000',
   location: 'Logan Arcade',
@@ -12,10 +14,12 @@ const hardcoded = {
 const dateTime = ref()
 const location = ref()
 
+console.log('URL:', NEXT_EVENT_URI)
+
 onMounted(async () => {
   let nextEvent
   try {
-    const response = await fetch(import.meta.env.VITE_NEXT_EVENT_URI)
+    const response = await fetch(NEXT_EVENT_URI)
 
     nextEvent = (await response.json()) as CalendarEvent
   } catch (err) {
