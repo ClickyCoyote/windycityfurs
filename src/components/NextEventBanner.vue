@@ -7,7 +7,7 @@ import type { CalendarEvent } from '../types.ts'
 const NEXT_EVENT_URI = `${import.meta.env.VITE_API_BASE_URI}${import.meta.env.VITE_NEXT_EVENT_URI}`
 
 const hardcoded = {
-  formattedDate: '2026-06-21T15:00:00.000',
+  formattedDate: '2026-09-227T15:00:00.000',
   location: 'Logan Arcade',
 }
 
@@ -27,10 +27,7 @@ onMounted(async () => {
     nextEvent = hardcoded
   }
 
-  dateTime.value = format(
-    new Date(nextEvent.formattedDate),
-    "eeee, MMMM do 'at' h:mmaaa",
-  )
+  dateTime.value = format(new Date(nextEvent.formattedDate), "eeee, MMMM do 'at' h:mmaaa")
   location.value = nextEvent.location
 })
 </script>
