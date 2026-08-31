@@ -10,7 +10,7 @@ import NextEventBanner from '../components/NextEventBanner.vue'
     <div class="card mb-4">
       <img
         src="/wcf-logo-full.svg"
-        class="logo w-9/12 m-auto max-h-96"
+        class="logo max-md:w-9/12 md:w-8/12 lg:w-7/12 xl:w-6/12 m-auto"
         alt="Windy City Furs"
       />
       <div class="mt-4">
