@@ -35,27 +35,23 @@ const items = ref([
     url: 'https://bsky.app/profile/windycityfurs.org',
     icon: 'pi pi-at',
   },
+  {
+    label: 'Discord',
+    url: 'https://discord.gg/vGe6EqC2AW',
+    icon: 'pi pi-discord',
+  },
 ])
 </script>
 
 <template>
-  <Menubar
-    :model="items"
-    class="justify-content-end min-h-14"
-    pt:start:class="mr-auto"
-  >
+  <Menubar :model="items" class="justify-content-end min-h-14" pt:start:class="mr-auto">
     <template #start>
       <RouterLink to="/">
         <img src="/wcf.png" class="h-8" alt="Windy City Furs" />
       </RouterLink>
     </template>
     <template #item="{ item, props }">
-      <RouterLink
-        v-if="item.route"
-        v-slot="{ href, navigate }"
-        :to="item.route"
-        custom
-      >
+      <RouterLink v-if="item.route" v-slot="{ href, navigate }" :to="item.route" custom>
         <a :href="href" v-bind="props.action" @click="navigate">
           <span :class="item.icon" />
           <span>{{ item.label }}</span>

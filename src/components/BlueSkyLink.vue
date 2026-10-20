@@ -8,7 +8,7 @@ import ExternalLinkButton from './ExternalLinkButton.vue'
     label="BlueSky"
   >
     <template #icon>
-      <i class="pi pi-at h-8 font-medium" style="font-size: 2rem"></i>
+      <img class="h-8" src="/bsky.png" alt="BlueSky"></img>
     </template>
   </ExternalLinkButton>
 </template>
