@@ -6,9 +6,11 @@ import { Card } from 'primevue'
   <h1>Staff</h1>
   <Card style="width: 15rem; overflow: hidden">
     <template #header>
-      <img alt="user header" src="/clicky.png" />
+      <a href="https://coyote.fm" target="_blank">
+        <img alt="user header" src="/clicky.png" />
+      </a>
     </template>
-    <template #title>Clicky Coyote</template>
+    <template #title><a href="https://coyote.fm" target="_blank">Clicky Coyote</a></template>
     <template #subtitle>Group Owner / Admin</template>
     <template #content>
       <p class="m-0"></p>
